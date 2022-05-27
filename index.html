@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <!-- Google Fonts Links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+  <body>
+      <main>
+      <!-- Rating state start -->
+      <section id="survey">
+        <div class="container">
+          <div class="icon">
+            <img src="images/icon-star.svg" alt="">
+          </div>
+          <h1 class="survey__heading">How did we do?</h1>
+          <form action="#" method="post" id="support-feedback">
+            <fieldset>
+              <legend class="survey__text">
+                Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+              </legend>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+              <div class="form-group-rating">
+                <input id="rating_1" type="radio" name="rating" value="1">
+                <label for="rating_1">1</label>
 
-  <!-- Rating state start -->
+                <input id="rating_2" type="radio" name="rating" value="2">
+                <label for="rating_2">2</label>
 
-  How did we do?
+                <input id="rating_3" type="radio" name="rating" value="3">
+                <label for="rating_3">3</label>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+                <input id="rating_4" type="radio" name="rating" value="4">
+                <label for="rating_4">4</label>
 
-  1 2 3 4 5
+                <input id="rating_5" type="radio" name="rating" value="5">
+                <label for="rating_5">5</label>
+              </div>
 
-  Submit
+              <div class="form-group-btn">
+                <button type="submit" class="submit-btn">submit</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>      
+      </section>
+      <!-- Rating state end -->  
 
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <!-- Thank you state start -->
+      <section id="thankyou" class="hidden">
+        <div class="container">
+          <div class="rating-followup">
+            <img src="images/illustration-thank-you.svg" alt="">
+            <span class="user-feedback">
+              You selected <span class="user-rating">x</span> out of 5
+            </span>
+          </div>
+          <div class="message">
+            <h2 class="message__heading">Thank you!</h2>
+            <p class="message__text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+          </div>
+        </div> 
+      </section>
+      <!-- Thank you state end -->
+    </main>
+    <footer>
+      <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">a-woodworth</a>.</p>
+      </div>
+    </footer>
+  </body>
 </html>
