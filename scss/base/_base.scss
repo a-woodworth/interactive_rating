@@ -1,0 +1,42 @@
+// ___________________________________________________________________
+// Base Styles
+// ___________________________________________________________________
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-bg-main;
+  font-family: $font-family--primary;
+  margin: 0;
+  padding: 0;
+}
+
+h1, 
+h2, 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  @include text($heading__default, $font-weight--bold, $white);
+  line-height: $lineL;
+}
+
+p {
+  @include text($text__default, $font-weight--regular, $color-text);
+  line-height: $line__default;
+}
+
+fieldset {
+  border: none;
+}

@@ -1,0 +1,24 @@
+// ___________________________________________________________________
+// Button Links
+// ___________________________________________________________________
+
+.btn {
+  @include rounded(22.5px);
+  @include text($text__default, $font-weight--bold, $white);
+  border: none;
+  font-family: $font-family--primary;
+  letter-spacing: 1.87px;
+  line-height: $lineL;
+  min-width: 17.5rem;
+  padding: .75rem 6.75rem;
+  text-transform: uppercase;
+}
+
+.submit-btn {
+  background-color: $color-btn-primary;
+
+  &:hover {
+    background-color: $white;
+    color: $orange;
+  }
+}

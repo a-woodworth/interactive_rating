@@ -1,0 +1,39 @@
+// ___________________________________________________________________
+// Global Config
+// ___________________________________________________________________
+
+//Font Stack
+$font-family--primary: 'Overpass', sans-serif;
+
+// Font Weights
+$font-weight--bold: 700;
+$font-weight--regular: 400;
+
+// Colors
+$white: #{'hsl(0, 0%, 100%)'};
+$orange: #{'hsl(25, 97%, 53%)'};
+$medium-gray: #{'hsl(216, 12%, 54%)'};
+$light-gray: #{'hsl(217, 12%, 63%)'};
+$dark-blue: #{'hsl(213, 19%, 18%)'};
+$max-darkness: #{'hsl(216, 12%, 8%)'};
+$night: #{'radial-gradient(98.96% 98.96% at 50% 0%, hsl(215, 20%, 17%) 0%, hsl(216, 24%, 12%) 100%)'};
+
+// Color Usage
+$color-bg-main: $max-darkness;
+$color-bg-inner: $night;
+$color-btn-primary: $orange;
+$color-radio: $dark-blue;
+$color-response: $orange;
+$color-text: $light-gray;
+
+// Text
+$heading__default: 1.5rem;
+$text__default: .875rem;
+
+// Line Height
+$lineL: 1.26;
+$line__default: 1.57;
+
+// Breakpoints
+// Note: Rating container desktop width = 25.75rem and height = 26rem
+$brkpoint-md: '(min-width: 28rem)';

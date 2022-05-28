@@ -1,0 +1,29 @@
+// ___________________________________________________________________
+// Main - Section Styles
+// ___________________________________________________________________
+
+#survey {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.icon {
+  @include rounded($radius: 50%);
+  @include size($width: 2.5rem);
+  background-color: $dark-blue;
+  position: relative;
+}
+
+.icon img {
+  @include position($position: absolute, $top: 50%, $left: 50%);
+  transform: translate(-50%, -50%);
+}
+
+.survey__text {
+  @include text($text__default, $font-weight--regular, $color-text);
+  line-height: $line__default;
+}
+
+.form-group-rating label {
+  @include text($text__default, $font-weight--regular, $medium-gray);
+}

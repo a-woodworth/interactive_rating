@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.26;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.57;
+}
+
+fieldset {
+  border: none;
+}
+
+.btn {
+  border-radius: 22.5px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 1.87px;
+  line-height: 1.26;
+  min-width: 17.5rem;
+  padding: 0.75rem 6.75rem;
+  text-transform: uppercase;
+}
+
+.submit-btn {
+  background-color: hsl(25, 97%, 53%);
+}
+.submit-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.container {
+  border-radius: 15px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, hsl(215, 20%, 17%) 0%, hsl(216, 24%, 12%) 100%);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 21.45rem;
+  width: 100%;
+}
+
+#survey {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsl(213, 19%, 18%);
+  position: relative;
+}
+
+.icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.survey__text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.57;
+}
+
+.form-group-rating label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: hsl(216, 12%, 54%);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+// ___________________________________________________________________
+// Mixins
+// ___________________________________________________________________
+
+// Position
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) { 
+   position: $position;
+   top: $top;
+   right: $right;
+   bottom: $bottom;
+   left: $left;
+}
+
+// Rounded Border
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
+
+// Size
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Text
+@mixin text($size, $weight: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}

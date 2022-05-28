@@ -1,0 +1,12 @@
+// ___________________________________________________________________
+// Containers
+// ___________________________________________________________________
+
+.container {
+  @include rounded(15px);
+  background: $night;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 21.45rem;
+  width: 100%;
+}
