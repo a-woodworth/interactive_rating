@@ -11,6 +11,8 @@
   @include rounded($radius: 50%);
   @include size($width: 2.5rem);
   background-color: $dark-blue;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -19,11 +21,41 @@
   transform: translate(-50%, -50%);
 }
 
+.survey__heading {
+  margin-bottom: .625rem;
+  width: 280px;
+}
+
 .survey__text {
   @include text($text__default, $font-weight--regular, $color-text);
   line-height: $line__default;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  width: 280px;
+}
+
+.form-group-rating {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .form-group-rating label {
   @include text($text__default, $font-weight--regular, $medium-gray);
+  @include rounded(50%);
+  @include size($width: 2.625rem);
+  background-color: $dark-blue;
+  padding-top: .85rem;
+  text-align: center;
+}
+
+.form-group-rating label:hover {
+  background-color: $orange;
+  color: $white;
+}
+
+input[type="radio"] {
+  display: none;
 }

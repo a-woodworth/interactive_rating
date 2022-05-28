@@ -17,7 +17,8 @@ body {
 
 h1,
 h2,
-p {
+p,
+fieldset {
   margin: 0;
   padding: 0;
 }
@@ -57,6 +58,7 @@ fieldset {
 
 .submit-btn {
   background-color: hsl(25, 97%, 53%);
+  margin-bottom: 2rem;
 }
 .submit-btn:hover {
   background-color: hsl(0, 0%, 100%);
@@ -82,6 +84,8 @@ fieldset {
   width: 2.5rem;
   height: 2.5rem;
   background-color: hsl(213, 19%, 18%);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -92,17 +96,48 @@ fieldset {
   transform: translate(-50%, -50%);
 }
 
+.survey__heading {
+  margin-bottom: 0.625rem;
+  width: 280px;
+}
+
 .survey__text {
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(217, 12%, 63%);
   line-height: 1.57;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  width: 280px;
+}
+
+.form-group-rating {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .form-group-rating label {
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(216, 12%, 54%);
+  border-radius: 50%;
+  width: 2.625rem;
+  height: 2.625rem;
+  background-color: hsl(213, 19%, 18%);
+  padding-top: 0.85rem;
+  text-align: center;
+}
+
+.form-group-rating label:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+input[type=radio] {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
