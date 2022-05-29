@@ -6,6 +6,7 @@
   @include rounded(22.5px);
   @include text($text__default, $font-weight--bold, $white);
   border: none;
+  cursor: pointer;
   font-family: $font-family--primary;
   letter-spacing: 1.87px;
   line-height: $lineL;

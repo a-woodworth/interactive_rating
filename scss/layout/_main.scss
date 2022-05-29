@@ -2,9 +2,12 @@
 // Main - Section Styles
 // ___________________________________________________________________
 
-#survey {
+.grid {
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: auto;
+  margin-bottom: auto;
+  min-height: 100vh;
 }
 
 .icon {
@@ -40,6 +43,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
+  width: 280px;
 }
 
 .form-group-rating label {
@@ -51,11 +55,22 @@
   text-align: center;
 }
 
-.form-group-rating label:hover {
+input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+
+  &:checked + label {
+  background-color: $medium-gray;
+  color: $white;
+  }
+
+  & + label:hover {
   background-color: $orange;
   color: $white;
+  cursor: pointer;
+  }
 }
 
-input[type="radio"] {
+.hidden {
   display: none;
 }

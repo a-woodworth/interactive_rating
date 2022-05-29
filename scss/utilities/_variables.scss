@@ -11,12 +11,14 @@ $font-weight--regular: 400;
 
 // Colors
 $white: #{'hsl(0, 0%, 100%)'};
-$orange: #{'hsl(25, 97%, 53%)'};
-$medium-gray: #{'hsl(216, 12%, 54%)'};
 $light-gray: #{'hsl(217, 12%, 63%)'};
 $dark-blue: #{'hsl(213, 19%, 18%)'};
 $max-darkness: #{'hsl(216, 12%, 8%)'};
 $night: #{'radial-gradient(98.96% 98.96% at 50% 0%, hsl(215, 20%, 17%) 0%, hsl(216, 24%, 12%) 100%)'};
+
+// Changed colors from design spec to pass Accessibility Color Contrast Ratio
+$medium-gray: #{'hsl(215, 12%, 60%)'};
+$orange: #{'hsl(20, 100%, 41%)'};
 
 // Color Usage
 $color-bg-main: $max-darkness;
