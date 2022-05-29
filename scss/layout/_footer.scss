@@ -2,10 +2,16 @@
 // Footer
 // ___________________________________________________________________
 
-.attribution { 
+.attribution {
   text-align: center;
+  width: 100%;
 
   a {
     color: $halloween;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
   } 
 }

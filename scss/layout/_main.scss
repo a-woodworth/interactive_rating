@@ -21,6 +21,12 @@
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   position: relative;
+
+  @media #{$brkpoint-md} {
+    @include size($width: 3rem);
+    margin-top: 2rem;
+    margin-bottom: 1.875rem;
+  }
 }
 
 .icon img {
@@ -30,7 +36,12 @@
 
 .survey__heading {
   margin-bottom: .625rem;
-  width: 280px;
+  width: 17.5rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: .4375rem;
+    width: 21.25rem;
+  }
 }
 
 .rating-followup { 
@@ -39,18 +50,35 @@
   align-items: center;
   flex-direction: column;
   padding-top: 2.125rem;
+
+  @media #{$brkpoint-md} {
+    padding-top: 2.8125rem;
+  }
 }
 
 .rating-followup img {
   margin-bottom: 1.5rem;
+  width: 9rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 2rem;
+    width: 10.125rem;
+  }
 }
 
 .user-feedback {
   @include rounded(22.5px);
+  @include text($text__default, $font-weight--regular, $halloween);
+  line-height: $line__default;
   background-color: $dark-blue;
-  color: $halloween;
   margin-bottom: 1.5rem;
   padding: 5px 12px;
+
+  @media #{$brkpoint-md} {
+    @include text($textL);
+    line-height: $lineL;
+    padding: 4px 20px;
+  }
 }
 
 .message {

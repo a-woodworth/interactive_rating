@@ -16,7 +16,13 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
-  width: 280px;
+  width: 17.5rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 2rem;
+    width: 21.25rem;
+  }
+
 }
 
 .form-group-rating label {
@@ -26,6 +32,12 @@
   background-color: $dark-blue;
   padding-top: .85rem;
   text-align: center;
+
+  @media #{$brkpoint-md} {
+    @include text($textXL);
+    @include size($width: 3.1875rem);
+    padding-top: .75rem;
+  }
 }
 
 input[type="radio"] {
@@ -38,7 +50,7 @@ input[type="radio"] {
   }
 
   &:checked + label {
-    background-color: $medium-gray;
+    background-color: $medium-gray--checked;
     color: $white;
   }
 

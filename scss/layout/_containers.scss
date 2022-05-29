@@ -8,4 +8,9 @@
   margin: auto;
   padding-inline: 1.5rem;
   max-width: 21.45rem;
+
+  @media #{$brkpoint-md} {
+    max-width: 25.75rem;
+    padding-inline: 2.5rem;
+  }
 }

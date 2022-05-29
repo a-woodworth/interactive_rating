@@ -30,12 +30,24 @@ h2 {
   color: hsl(0, 0%, 100%);
   line-height: 1.26;
 }
+@media (min-width: 28rem) {
+  h1,
+h2 {
+    font-size: 1.75rem;
+  }
+}
 
 p {
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(217, 12%, 63%);
   line-height: 1.57;
+}
+@media (min-width: 28rem) {
+  p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
 }
 
 fieldset {
@@ -51,10 +63,19 @@ fieldset {
   cursor: pointer;
   font-family: "Overpass", sans-serif;
   letter-spacing: 1.87px;
-  line-height: 1.26;
+  line-height: 1.6;
   min-width: 17.5rem;
   padding: 0.75rem 6.75rem;
   text-transform: uppercase;
+}
+@media (min-width: 28rem) {
+  .btn {
+    font-size: 0.9375rem;
+    letter-spacing: 2px;
+    line-height: 1.26;
+    min-width: 21.25rem;
+    padding: 0.6875rem 8.625rem;
+  }
 }
 
 .submit-btn {
@@ -86,7 +107,13 @@ fieldset {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
-  width: 280px;
+  width: 17.5rem;
+}
+@media (min-width: 28rem) {
+  .form-group-rating {
+    margin-bottom: 2rem;
+    width: 21.25rem;
+  }
 }
 
 .form-group-rating label {
@@ -100,6 +127,14 @@ fieldset {
   padding-top: 0.85rem;
   text-align: center;
 }
+@media (min-width: 28rem) {
+  .form-group-rating label {
+    font-size: 1.5rem;
+    width: 3.1875rem;
+    height: 3.1875rem;
+    padding-top: 0.75rem;
+  }
+}
 
 input[type=radio] {
   opacity: 0;
@@ -110,7 +145,7 @@ input[type=radio]:focus + label {
   outline: 2px auto -webkit-focus-ring-color;
 }
 input[type=radio]:checked + label {
-  background-color: hsl(215, 12%, 60%);
+  background-color: hsl(221, 12%, 48%);
   color: hsl(0, 0%, 100%);
 }
 input[type=radio] + label:hover {
@@ -125,6 +160,12 @@ input[type=radio] + label:hover {
   margin: auto;
   padding-inline: 1.5rem;
   max-width: 21.45rem;
+}
+@media (min-width: 28rem) {
+  .container {
+    max-width: 25.75rem;
+    padding-inline: 2.5rem;
+  }
 }
 
 .grid {
@@ -148,6 +189,14 @@ input[type=radio] + label:hover {
   margin-bottom: 1rem;
   position: relative;
 }
+@media (min-width: 28rem) {
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.875rem;
+  }
+}
 
 .icon img {
   position: absolute;
@@ -158,7 +207,13 @@ input[type=radio] + label:hover {
 
 .survey__heading {
   margin-bottom: 0.625rem;
-  width: 280px;
+  width: 17.5rem;
+}
+@media (min-width: 28rem) {
+  .survey__heading {
+    margin-bottom: 0.4375rem;
+    width: 21.25rem;
+  }
 }
 
 .rating-followup {
@@ -168,17 +223,39 @@ input[type=radio] + label:hover {
   flex-direction: column;
   padding-top: 2.125rem;
 }
+@media (min-width: 28rem) {
+  .rating-followup {
+    padding-top: 2.8125rem;
+  }
+}
 
 .rating-followup img {
   margin-bottom: 1.5rem;
+  width: 9rem;
+}
+@media (min-width: 28rem) {
+  .rating-followup img {
+    margin-bottom: 2rem;
+    width: 10.125rem;
+  }
 }
 
 .user-feedback {
   border-radius: 22.5px;
-  background-color: hsl(213, 19%, 18%);
+  font-size: 0.875rem;
+  font-weight: 400;
   color: hsl(25, 97%, 53%);
+  line-height: 1.57;
+  background-color: hsl(213, 19%, 18%);
   margin-bottom: 1.5rem;
   padding: 5px 12px;
+}
+@media (min-width: 28rem) {
+  .user-feedback {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    padding: 4px 20px;
+  }
 }
 
 .message {
@@ -195,9 +272,14 @@ input[type=radio] + label:hover {
 
 .attribution {
   text-align: center;
+  width: 100%;
 }
 .attribution a {
   color: hsl(25, 97%, 53%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: hsl(0, 0%, 100%);
 }
 
 /*# sourceMappingURL=style.css.map */

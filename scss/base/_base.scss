@@ -29,13 +29,22 @@ fieldset {
 
 h1,
 h2 {
-  @include text($heading__default, $font-weight--bold, $white);
-  line-height: $lineL;
+  @include text($heading__mobile, $font-weight--bold, $white);
+  line-height: $lineM;
+
+  @media #{$brkpoint-md} {
+    @include text($headingL);
+  }
 }
 
 p {
   @include text($text__default, $font-weight--regular, $color-text);
   line-height: $line__default;
+
+  @media #{$brkpoint-md} {
+    @include text($textL);
+    line-height: $lineL;
+  }
 }
 
 fieldset {
