@@ -10,6 +10,10 @@
   min-height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
+
 .icon {
   @include rounded($radius: 50%);
   @include size($width: 2.5rem);
@@ -29,48 +33,34 @@
   width: 280px;
 }
 
-.survey__text {
-  @include text($text__default, $font-weight--regular, $color-text);
-  line-height: $line__default;
-  margin-bottom: 1.5rem;
-  padding: 0;
-  width: 280px;
-}
-
-.form-group-rating {
+.rating-followup { 
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
-  width: 280px;
+  flex-direction: column;
+  padding-top: 2.125rem;
 }
 
-.form-group-rating label {
-  @include text($text__default, $font-weight--regular, $medium-gray);
-  @include rounded(50%);
-  @include size($width: 2.625rem);
+.rating-followup img {
+  margin-bottom: 1.5rem;
+}
+
+.user-feedback {
+  @include rounded(22.5px);
   background-color: $dark-blue;
-  padding-top: .85rem;
+  color: $halloween;
+  margin-bottom: 1.5rem;
+  padding: 5px 12px;
+}
+
+.message {
   text-align: center;
 }
 
-input[type="radio"] {
-  opacity: 0;
-  position: fixed;
-
-  &:checked + label {
-  background-color: $medium-gray;
-  color: $white;
-  }
-
-  & + label:hover {
-  background-color: $orange;
-  color: $white;
-  cursor: pointer;
-  }
+.message__heading {
+  margin-bottom: 0.625rem;
 }
 
-.hidden {
-  display: none;
+.message__text {
+  margin-bottom: 2.3125rem;
 }

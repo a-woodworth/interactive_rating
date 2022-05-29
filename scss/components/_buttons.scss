@@ -23,4 +23,9 @@
     background-color: $white;
     color: $orange;
   }
+
+   &:focus {
+    outline: 2px auto Highlight;
+    outline: 2px auto -webkit-focus-ring-color;
+  }
 }
