@@ -58,7 +58,8 @@ input[type="radio"] {
 
   &:hover + label {
     background-color: $orange;
-    cursor: pointer;
     color: $white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
   }
 }

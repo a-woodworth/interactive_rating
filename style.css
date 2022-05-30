@@ -155,8 +155,9 @@ input[type=radio]:checked + label {
 }
 input[type=radio]:hover + label {
   background-color: hsl(20, 100%, 41%);
-  cursor: pointer;
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 .container {
