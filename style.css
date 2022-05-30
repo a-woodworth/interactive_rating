@@ -85,6 +85,7 @@ fieldset {
 .submit-btn:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(20, 100%, 41%);
+  transition: all 0.3s ease 0s;
 }
 .submit-btn:focus {
   outline: 2px auto Highlight;
@@ -152,6 +153,7 @@ input[type=radio] + label:hover {
   background-color: hsl(20, 100%, 41%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 .container {

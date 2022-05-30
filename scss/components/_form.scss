@@ -58,5 +58,6 @@ input[type="radio"] {
     background-color: $orange;
     color: $white;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
   }
 }
