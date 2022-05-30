@@ -25,39 +25,40 @@
 
 }
 
-.form-group-rating label {
-  @include text($text__default, $font-weight--regular, $medium-gray);
+.radio-btn label,
+input[type="radio"] {
   @include rounded(50%);
   @include size($width: 2.625rem);
-  background-color: $dark-blue;
-  padding-top: .85rem;
-  text-align: center;
 
   @media #{$brkpoint-md} {
     @include text($textXL);
     @include size($width: 3.1875rem);
-    padding-top: .75rem;
   }
 }
 
-input[type="radio"] {
-  opacity: 0;
-  position: fixed;
+.radio-btn label {
+  @include text($text__default, $font-weight--regular, $medium-gray);
+  background-color: $dark-blue;
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  position: relative;
+}
 
-  &:focus + label {
-    outline: 2px auto Highlight;
-    outline: 2px auto -webkit-focus-ring-color;
-  }
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  position: absolute;
 
   &:checked + label {
     background-color: $medium-gray--checked;
     color: $white;
   }
 
-  & + label:hover {
+  &:hover + label {
     background-color: $orange;
-    color: $white;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    color: $white;
   }
 }
