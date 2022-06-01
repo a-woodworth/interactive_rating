@@ -13,11 +13,10 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
 
-  <body>
-      <main>
+  <body class="grid">
+    <main>
       <!-- Rating state start -->
-      <section id="survey" class="grid">
-        <div class="container">
+      <section id="survey" class="container">
           <div class="icon">
             <img src="images/icon-star.svg" alt="">
           </div>
@@ -59,30 +58,27 @@
                 <button type="submit" class="btn submit-btn">submit</button>
               </div>
             </fieldset>
-          </form>
-        </div>      
+          </form>  
       </section>
       <!-- Rating state end -->  
 
       <!-- Thank you state start -->
-      <section id="thankyou" class="grid">
-        <div class="container">
-          <div class="rating-followup">
-            <img src="images/illustration-thank-you.svg" alt="">
-            <span class="user-feedback">
-              You selected <span class="user-rating">x</span> out of 5
-            </span>
-          </div>
-          <div class="message">
-            <h2 class="message__heading">Thank you!</h2>
-            <p class="message__text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-          </div>
-        </div> 
+      <section id="thankyou" class="container hidden">
+        <div class="rating-followup">
+          <img src="images/illustration-thank-you.svg" alt="">
+          <span class="user-feedback">
+            You selected <span class="user-rating">x</span> out of 5
+          </span>
+        </div>
+        <div class="message">
+          <h2 class="message__heading">Thank you!</h2>
+          <p class="message__text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </div>
       </section>
       <!-- Thank you state end -->
     </main>
     <footer>
-      <div class="attribution">
+      <div class="attribution container">
         <p>Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.</p>
         <p>Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>
       </div>

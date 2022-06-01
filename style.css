@@ -160,26 +160,29 @@ input[type=radio]:hover + label {
   transition: all 0.3s ease 0s;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 4rem;
+  min-height: 100vh;
+}
+
 .container {
   border-radius: 15px;
   background: radial-gradient(98.96% 98.96% at 50% 0%, hsl(215, 20%, 17%) 0%, hsl(216, 24%, 12%) 100%);
   margin: auto;
-  padding-inline: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   max-width: 21.45rem;
 }
 @media (min-width: 28rem) {
   .container {
     max-width: 25.75rem;
-    padding-inline: 2.5rem;
+    padding: 2rem 2.5rem 0 2.5rem;
   }
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: auto;
-  margin-bottom: auto;
-  min-height: 100vh;
+main {
+  margin: auto;
 }
 
 .hidden {
@@ -191,24 +194,19 @@ input[type=radio]:hover + label {
   width: 2.5rem;
   height: 2.5rem;
   background-color: hsl(213, 19%, 18%);
-  margin-top: 1.5rem;
+  display: grid;
   margin-bottom: 1rem;
-  position: relative;
 }
 @media (min-width: 28rem) {
   .icon {
     width: 3rem;
     height: 3rem;
-    margin-top: 2rem;
     margin-bottom: 1.875rem;
   }
 }
 
 .icon img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  place-self: center;
 }
 
 .survey__heading {
@@ -227,11 +225,11 @@ input[type=radio]:hover + label {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 2.125rem;
+  padding-top: 0.625rem;
 }
 @media (min-width: 28rem) {
   .rating-followup {
-    padding-top: 2.8125rem;
+    padding-top: 0.8125rem;
   }
 }
 
@@ -277,7 +275,10 @@ input[type=radio]:hover + label {
 }
 
 .attribution {
+  background: none;
+  padding: 0.5rem 0;
   text-align: center;
+  height: 4rem;
   width: 100%;
 }
 .attribution a {

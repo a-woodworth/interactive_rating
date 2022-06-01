@@ -2,12 +2,8 @@
 // Main - Section Styles
 // ___________________________________________________________________
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: auto;
-  margin-bottom: auto;
-  min-height: 100vh;
+main {
+  margin: auto;
 }
 
 .hidden {
@@ -18,20 +14,17 @@
   @include rounded($radius: 50%);
   @include size($width: 2.5rem);
   background-color: $dark-blue;
-  margin-top: 1.5rem;
+  display: grid;
   margin-bottom: 1rem;
-  position: relative;
 
   @media #{$brkpoint-md} {
     @include size($width: 3rem);
-    margin-top: 2rem;
     margin-bottom: 1.875rem;
   }
 }
 
 .icon img {
-  @include position($position: absolute, $top: 50%, $left: 50%);
-  transform: translate(-50%, -50%);
+  place-self: center;
 }
 
 .survey__heading {
@@ -49,10 +42,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 2.125rem;
+  padding-top: .625rem;
 
   @media #{$brkpoint-md} {
-    padding-top: 2.8125rem;
+    padding-top: .8125rem;
   }
 }
 

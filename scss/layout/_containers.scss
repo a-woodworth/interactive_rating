@@ -2,15 +2,22 @@
 // Containers
 // ___________________________________________________________________
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 4rem;
+  min-height: 100vh;
+}
+
 .container {
   @include rounded(15px);
   background: $night;
   margin: auto;
-  padding-inline: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   max-width: 21.45rem;
 
   @media #{$brkpoint-md} {
     max-width: 25.75rem;
-    padding-inline: 2.5rem;
+    padding: 2rem 2.5rem 0 2.5rem;
   }
 }
