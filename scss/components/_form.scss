@@ -62,3 +62,20 @@ input[type="radio"] {
     transition: all 0.3s ease 0s;
   }
 }
+
+.error {
+  border-bottom: 2px solid $halloween;
+  color: $halloween;
+  margin-bottom: .5rem;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

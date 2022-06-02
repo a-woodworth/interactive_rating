@@ -83,5 +83,9 @@ main {
 }
 
 .message__text {
-  margin-bottom: 2.3125rem;
+  padding-bottom: 2.3125rem;
+
+  @media #{$brkpoint-md} {
+    padding-bottom: 2.8125rem;
+  }
 }

@@ -160,6 +160,23 @@ input[type=radio]:hover + label {
   transition: all 0.3s ease 0s;
 }
 
+.error {
+  border-bottom: 2px solid hsl(25, 97%, 53%);
+  color: hsl(25, 97%, 53%);
+  margin-bottom: 0.5rem;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -271,7 +288,12 @@ main {
 }
 
 .message__text {
-  margin-bottom: 2.3125rem;
+  padding-bottom: 2.3125rem;
+}
+@media (min-width: 28rem) {
+  .message__text {
+    padding-bottom: 2.8125rem;
+  }
 }
 
 .attribution {
