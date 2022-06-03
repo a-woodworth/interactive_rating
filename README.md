@@ -23,7 +23,7 @@ Users should be able to:
 - See the "Thank you" card state after submitting a rating
 
 ### Links
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-rating-accessibility-grid-javascript-peZsdqrsUH)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/interactive_rating/)
 
 ### Screenshots
