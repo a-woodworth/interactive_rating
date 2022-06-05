@@ -2,6 +2,9 @@
 // Button Links
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
 .btn {
   @include rounded(22.5px);
   @include text($text__default, $font-weight--bold, $white);

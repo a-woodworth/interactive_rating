@@ -2,6 +2,9 @@
 // Form Legend, Inputs, and Labels
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
 .survey__text {
   @include text($text__default, $font-weight--regular, $color-text);
   line-height: $line__default;

@@ -2,6 +2,9 @@
 // Containers
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;

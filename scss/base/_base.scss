@@ -2,6 +2,9 @@
 // Base Styles
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
 html {
   box-sizing: border-box;
 }

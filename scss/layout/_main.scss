@@ -2,6 +2,9 @@
 // Main - Section Styles
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
 main {
   margin: auto;
 }
