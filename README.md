@@ -32,6 +32,10 @@ Users should be able to:
 
 ![Mobile Sceenshot](/screenshots/mobile-rating-start.png)
 
+**Mobile: Error State**
+
+![Mobile Sceenshot](/screenshots/mobile-rating-error.png)
+
 **Mobile: Thank you State**
 
 ![Mobile Sceenshot](/screenshots/mobile-rating-end.png)
